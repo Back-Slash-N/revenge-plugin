@@ -1,0 +1,1 @@
+(function(e,i,o){"use strict";const a=i.findByProps("dispatch");let t;var d={onLoad:function(){t=o.before("dispatch",a,function([n]){n.type==="SPOTIFY_PLAYER_STATE"&&n.payload?.isPremium===void 0&&(n.payload.isPremium=!0)})},onUnload:function(){typeof t=="function"&&t()}};return e.default=d,Object.defineProperty(e,"__esModule",{value:!0}),e})({},vendetta.metro,vendetta.patcher);
